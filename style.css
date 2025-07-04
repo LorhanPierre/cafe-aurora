@@ -129,3 +129,55 @@ a{
     background: #5c2e0f;
     transition: 0.5;
 }
+
+.cardapio{
+    background-color: #ffff;
+    padding: 5rem 0;
+}
+
+.cardapio h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.descricao{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--text-muted);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card{
+    background: var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card-body{
+    padding: 1.5rem;
+}
+
+.card-body h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.card-body .price{
+    font-weight: 600;
+    color: var(--primary-color);
+    
+}

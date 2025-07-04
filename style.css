@@ -1,3 +1,19 @@
+:root{
+    --primary-color: #8f4513;
+    --background-color: #fffaf5;
+    --light-color: #fff8f0;
+    --text-dark: #222;
+    --text-muted: #555;
+    --font-body: 'Poppins', sans-serif;
+    --font-logo: 'Pacifico', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
 
     font-family: 'Pacifico';
@@ -9,15 +25,107 @@
 
     font-family: 'Poppins';
     src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
 
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
     
-h1{
 
-    font-family: 'Pacifico', cursive;
+body{
+
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-dark);
 }
 
-p{
+img {
+    max-width: 100%;
+    display:block;
+}
 
-    font-family: Poppins;
+a{
+    text-decoration: none;
+    color:inherit;  
+}
+
+.conteiner{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--background-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.header-inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+#menu-toggle{
+    font-size: 1.5rem;
+    border: none;
+    font-weight:700;
+    background-color: var(--background-color);
+}
+
+.menu-mobile button{
+
+}
+
+.menu-desktop{
+    display: none;
+}
+
+.hero-overlay {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/aurora-capa.jpg") center/cover no-repeat;
+    padding-top: 4rem;
+}
+
+.hero-content {
+    text-align: center;
+    color:var(--light-color);
+    z-index: 2;
+    padding: 2rem;
+}
+
+.hero-content h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-content p{
+    font-size: 1.1rem;
+    margin-bottom:  2rem;
+}
+
+.btn{
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #5c2e0f;
+    transition: 0.5;
 }
